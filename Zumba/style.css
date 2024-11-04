@@ -1,0 +1,503 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  text-decoration: none;
+  /* font-family: "Dancing Script", cursive; */
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+body {
+  background: url(img/DALL·E\ 2024-11-03\ 15.25.12\ -\ A\ vibrant\ and\ energetic\ landing\ page\ background\ for\ a\ Zumba\ fitness\ website.\ The\ background\ features\ a\ lively\ blend\ of\ bright\ colors\ like\ pink\,\ yellow.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.section-box {
+  border: 2px solid rgb(255, 255, 255, 0.2);
+  width: 85%;
+  height: 85vh;
+  border-radius: 15px;
+  backdrop-filter: blur(12px);
+  background-color: rgb(255, 255, 255, 0.2);
+  box-shadow: inset 0 0 5px rgb(255, 255, 255, 0.2);
+}
+
+.content-wrap {
+  padding: 20px 50px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-logo {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-items {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+nav .active {
+  color: #FF4D6D;
+}
+.nav-items::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  bottom: -10px;
+  position: absolute;
+  background-color: #FF4D6D;
+  box-shadow: 0 0 5px #FF4D6D;
+  transform: scale(0);
+  transform-origin: left;
+  transition: 0.6s;
+}
+.nav-items:hover::after {
+  transform: scale(1);
+}
+.active:hover::after {
+  background-color: #FF4D6D;
+  box-shadow: 0 0 5px #FF4D6D;
+}
+
+.zumba-content h3 {
+  letter-spacing: 30px;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 600;
+}
+.zumba-content h1 {
+  font-size: 50px;
+  text-align: center;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  color: black;
+}
+.zumba-content img {
+  width: 32%;
+  margin-top: -10px;
+  animation: image 10s infinite;
+  border-radius: 20px;
+  margin-bottom: 10px;
+
+}
+.zumba-content {
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+@keyframes image {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transition: left;
+  }
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.row .zumba-btn,
+.zumba-btn2 {
+  padding: 5px 25px;
+  margin: 5px;
+}
+.zumba-btn {
+  border: none;
+  background-color: #f9517d;
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+}
+.zumba-btn2 {
+  border: none;
+  border: 1px solid #f87396;
+  color: white;
+  border-radius: 25px;
+  font-weight: bold;
+  background-color: transparent;
+}
+.zumba-btn2:hover{
+    background-color: white;
+    border: none;
+    color: #FF4D6D;
+}
+
+.zumba-btn:hover{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #FF4D6D;
+}
+.content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.about-img {
+  width: 90%;
+  height: 94%;
+  
+}
+.right-grid,
+.left-grid {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+#about .right-grid {
+  align-items: center;
+}
+.section-box h1 {
+  text-align: center;
+  font-size: 40px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  color: #f9517d;
+  animation: bottomin 1s ease-in-out forwards;
+
+}
+.left-grid h2 {
+  letter-spacing: 2px;
+  animation: bottomin 1s ease-in-out forwards;
+   animation-delay: 0.2s;
+   opacity: 0;
+}
+.left-grid p {
+  letter-spacing: 2px;
+  line-height: 1.8;
+  margin: 10px;
+  animation: bottomin 1s ease-in-out forwards;
+  animation-delay: 0.4s;
+  opacity: 0;
+}
+.left-grid a {
+  border-radius: 15px;
+  background-color: #f9517d;
+  border: none;
+  padding: 5px 20px;
+  animation: bottomin 1s ease-in-out forwards;
+  animation-delay: 0.6s;
+   opacity: 0;
+}
+.left-grid a:hover {
+  background-color: white;
+  color: #f9517d;
+}
+.right-grid img{
+    animation: zoomin 1s ease-in-out forwards;
+
+}
+
+@keyframes bottomin {
+  from {
+    transform: translateY(500px);
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes zoomin {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#gallery {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 50px 0;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    animation: zoomin 0.3s ease-in-out forwards;
+
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+.section-gallery h2{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: 10px;
+    color: #f9517d;
+    animation: bottomin 0.3s ease-in-out forwards;
+
+}
+
+.btn-gallery{
+    background-color: #f9517d;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+    width: 100px;
+    margin: 0 auto;
+    border-radius: 15px;
+}
+.btn-gallery:hover{
+    background-color: white;
+    color: #f9517d;
+}
+.section-gallery{
+    border: 2px solid rgb(255, 255, 255, 0.2);
+    width: 85%;
+    height: 97vh;
+    border-radius: 15px;
+    backdrop-filter: blur(12px);
+    background-color: rgb(255, 255, 255, 0.2);
+    box-shadow: inset 0 0 5px rgb(255, 255, 255, 0.2);
+
+}
+
+.content-contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.content-contact .input-content{
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 10px;
+    color: black;
+    width: 300px;
+    background-color: transparent;
+    border: 1px solid white;
+}
+.content-contact ::placeholder{
+    color: white;
+}
+#textarea{
+    padding: 10px;
+    border-radius: 10px;
+    width: 300px;
+    height: 70px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 1px solid white;
+    color: #222;
+}
+.content-contact a{
+    border-radius: 15px;
+    padding: 10px 40px;
+    background-color: #f9517d;
+    color: white;
+}
+.content-contact a:hover{
+    background-color: #fff;
+    color: #f9517d;
+}
+
+
+#footer {
+    background-color: #222;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-logo img {
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    font-size: 14px;
+    margin-top: 10px;
+    color: #ddd;
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links h3,
+.footer-contact h3,
+.footer-social h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #f9517d; /* Zumba-themed pink */
+}
+
+.footer-links ul li a {
+    color: #ddd;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links ul li a:hover {
+    color: #FFD93D; /* Zumba-themed pink */
+}
+
+.footer-contact p {
+    font-size: 14px;
+    color: #ddd;
+}
+
+.footer-social .social-icons a {
+    display: inline-block;
+    margin: 0 5px;
+    transition: transform 0.3s;
+}
+
+.footer-social .social-icons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 5px;
+}
+
+.footer-social .social-icons a:hover {
+    transform: scale(1.1);
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+
+.footer-bottom p {
+    font-size: 12px;
+    color: #bbb;
+}
+
+@media (max-width: 600px) {
+    body {
+      background-size: cover;
+      padding: 10px;
+    }
+  
+    .section-box {
+      width: 95%;
+      height: auto;
+      padding: 20px;
+    }
+  
+    .zumba-content h1, .zumba-content h3 {
+      font-size: 24px; 
+      letter-spacing: 2px;
+    }
+  
+    .zumba-content img {
+      width: 80%; 
+    }
+  
+    nav {
+      gap: 10px;
+      font-size: 14px;
+    }
+  
+    .content-grid {
+      display: block; 
+    }
+  
+    .gallery-grid {
+      grid-template-columns: 1fr; 
+  
+    .footer-container {
+      grid-template-columns: 1fr; 
+    }
+  
+    .content-contact .input-content,
+    #textarea {
+      width: 90%; 
+    }
+  }
+  
+ 
+  @media (max-width: 768px) {
+    .section-box {
+      width: 90%;
+    }
+  
+    .content-grid {
+      grid-template-columns: 1fr; 
+    }
+  
+    .gallery-grid {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  
+    .footer-container {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+  }
+}
