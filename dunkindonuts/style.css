@@ -1,0 +1,774 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@font-face {
+  font-family: "DunkinDonuts";
+  src: url("junegullrg.otf") format("truetype");
+  font-style: normal;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  scroll-padding: 2rem;
+  box-sizing: border-box;
+}
+
+/* header of page contain navbar */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  box-shadow: 5px 13px 41px rgba(0, 0, 0, 0.048);
+}
+.navbar {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.nav-toggle {
+    display: none;
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+  }
+  .navbar.active {
+    display: block; /* Show nav links when active */
+  }
+  .nav-toggle {
+    display: block; /* Show hamburger icon */
+  }
+.logo {
+  margin-right: auto;
+}
+.navbar li {
+  margin: 0 10px;
+}
+.navbar a {
+  color: black;
+  text-decoration: none;
+  text-transform: none;
+  font-size: 19px;
+  font-family: "DunkinDonuts";
+}
+.navbar a:hover {
+  color: #c63663;
+  transition: color 0.3s ease-in-out;
+}
+
+.nav-items {
+  position: relative;
+  display: flex;
+}
+.nav-items::after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  color: #c63663;
+  bottom: -10px;
+  position: absolute;
+  background-color: #c63663;
+  transform: scale(0);
+  transform-origin: left;
+  transition: 0.9s;
+}
+.nav-items:hover::after {
+  transform: scale(1);
+}
+
+/* home section */
+.home {
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.homeinfo {
+  flex: 1 1 17rem;
+  margin-right: 15%;
+  text-align: center;
+  padding: 20px;
+}
+.homeimg {
+  flex: 1 1 17rem;
+  margin-left: 15%;
+}
+.spanorange {
+  color: orangered;
+}
+.spanpurple {
+  color: #c63663;
+}
+.homeinfo span {
+  font-family: "DunkinDonuts";
+  font-size: 2.5rem;
+}
+.homeinfo h1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: rgb(53, 53, 53);
+  font-family: "DunkinDonuts";
+  font-size: 2.5rem;
+}
+.homeinfo h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.homeinfo p {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  word-spacing: 1px;
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+}
+.homeinfo a {
+  margin-right: 220px;
+  border: none;
+  background-color: #c63663;
+  width: 190px;
+  padding: 13px;
+  display: inline-block;
+  border-radius: 25px;
+  color: white;
+  text-decoration: none;
+  font-family: "DunkinDonuts";
+}
+.homeinfo a:hover {
+  color: #fff;
+  background-color: orangered;
+}
+
+/* point card section */
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.earnpoints1 h1,
+.earnpoints2 h1,
+.earnpoints3 h1 {
+  font-family: "DunkinDonuts";
+  color: rgb(53, 53, 53);
+}
+.earnpoints1,
+.earnpoints2,
+.earnpoints3 {
+  margin: 30px;
+}
+.points a {
+  text-decoration: none;
+  background-color: #c63663;
+  color: white;
+  font-family: "DunkinDonuts";
+  padding: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 190px;
+  margin: 0 auto;
+  border-radius: 25px;
+  margin-bottom: 15px;
+}
+.points a:hover {
+  color: #fff;
+  background-color: orangered;
+}
+.container img {
+  margin-bottom: 10px;
+  transition: 0.3s ease-in-out;
+}
+.container img:hover {
+  transform: scale(1.1);
+}
+
+/* offer section */
+
+.offer {
+  background-color: #f8f4f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.span-price {
+  color: #c63663;
+  font-size: 12rem;
+}
+.span-offer {
+  color: orangered;
+  font-size: 5rem;
+  font-family: "DunkinDonuts";
+}
+
+.div-offer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.offer a {
+  text-decoration: none;
+  background-color: #c63663;
+  color: white;
+  font-family: "DunkinDonuts";
+  padding: 13px;
+  display: flex;
+  justify-content: center;
+  margin-left: 150px;
+  width: 190px;
+  border-radius: 25px;
+  margin-bottom: 15px;
+}
+.offer p {
+  font-size: 13px;
+}
+/* section app */
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60vh;
+}
+.span-app1 {
+  font-family: "DunkinDonuts";
+  color: orangered;
+  font-size: 3.5rem;
+}
+.span-app2 {
+  font-family: "DunkinDonuts";
+  color: #c63663;
+  font-size: 3.5rem;
+}
+.span-app3 {
+  font-family: "DunkinDonuts";
+  color: rgb(53, 53, 53);
+  font-size: 3.5rem;
+}
+.info-app{
+    width: 30%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.h1-app{
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+.span-app1-2{
+    margin-left: 40px;
+}
+.info-app h3{
+    color: #3e342f;
+    font-size: 19px;
+    font-weight: 450;
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+.info-app ul{
+    margin-bottom: 30px;
+}
+.store{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.button-appstore, .button-playstore{
+    width: auto;
+    height: auto;
+    border: none;
+    border-radius: 25px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.button-appstore img, .button-playstore img{
+    width: 100%;
+    height: 100%;  
+    object-fit: contain;
+    border-radius: 0;
+}
+.store button{
+    margin: 10px;
+}
+/* section menu */
+.menu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    text-align: center;
+    margin-top: 40px;
+}
+.menu .menu1{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    border: 1px solid rgb(199, 197, 197);
+    width: 50%;
+    height: 60vh;
+
+}
+
+.menu .menu2{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    flex-direction: column;
+    border: 1px solid rgb(199, 197, 197);
+    width: 25%;
+    height: 60vh;
+}
+.menu .menu3{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-direction: column;
+    border: 1px solid rgb(199, 197, 197);
+    width: 25%;
+    height: 60vh;
+}
+.menu h1{
+    color: #c63663;
+    font-family: "DunkinDonuts";
+
+}
+.menu h3{
+    font-weight: 390;
+    margin: 10px;
+}
+.menu img{
+    transform: scale(1);
+    transition: 0.3s ease-in;
+}
+.menu img:hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+/*section card */
+.card{
+    width: 100%;
+    height: 49vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 1px solid rgb(199, 197, 197);
+
+}
+.card-info h1{
+    color: rgb(53, 53, 53);
+    font-size: 4rem;
+    margin: 0;
+    padding-top: 40px;
+}
+.card-info p {
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 1.1em; 
+    line-height: 1.6; 
+    color: #333; 
+    font-weight: 400; 
+    max-width: 50%; 
+    margin: 0 auto 25px auto; 
+}
+.card-info a{
+    width: 250px;
+    color: white;
+    background-color: #c63663;
+    font-family: "DunkinDonuts";
+    border-radius: 25px;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+    
+}
+.card-img{
+    width: 37%;
+}
+.card-img img{
+    height: 300px;
+}
+.card-info{
+    width: 67%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+/* section location */
+.location{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: 70vh;
+}
+.location-img img{
+    object-fit: cover;
+    width: 100%;
+    height: 70vh;
+}
+.location-img{
+    width: 65%;
+}
+.location-info{
+    
+    padding-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 35%;
+}
+.location-info h1{
+    font-size: 4rem;
+    font-family: "DunkinDonuts";
+    color: rgb(53, 53, 53);
+
+}
+.location-info p{
+    font-size: 1.4rem;
+    font-weight: 390;
+    padding-top: 20px;
+    line-height: 1.1px;
+    padding-bottom: 50px;
+}
+.location-info a{
+    width: 200px;
+    border: none;
+    border-radius: 25px;
+    background-color: #c63663;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+    font-family: "DunkinDonuts";
+
+}
+
+.footer {
+    background-color: #f1f1f1; 
+    color: #333; 
+    padding: 40px;
+    font-family: Arial, sans-serif;
+    border-top: 1px solid #ddd;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+}
+
+.footer h3 {
+    color: #ff6600; 
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 8px;
+}
+
+.footer ul li a {
+    color: #333; 
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer ul li a:hover {
+    color: #ff6600; 
+}
+
+.footer .social-links {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.footer .social-links li {
+    margin-bottom: 0;
+}
+
+.footer .legal-links {
+    margin-top: 15px;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    color: #666;
+}
+
+.footer p {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 15px;
+}
+
+@media screen and (max-width: 480px) {
+    header {
+      padding: 10px;
+    }
+  
+    .navbar a {
+      font-size: 16px;
+    }
+  
+    .homeinfo h1 {
+      font-size: 2rem;
+    }
+  
+    .homeinfo p {
+      font-size: 14px;
+    }
+  
+    .homeinfo a {
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .card-info h1 {
+      font-size: 2.5rem;
+    }
+  
+    .card-info p {
+      font-size: 14px;
+    }
+  
+    .footer h3 {
+      font-size: 1rem;
+    }
+  
+    .footer ul li a {
+      font-size: 0.8rem;
+    }
+  
+    .footer .social-links li a {
+      font-size: 1.2rem;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    /* Adjust header layout */
+    header {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .navbar {
+      flex-direction: column;
+      gap: 15px;
+      text-align: center;
+    }
+  
+    .home {
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .homeinfo {
+      margin-right: 0;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+  
+    .homeimg {
+      margin-left: 0;
+    }
+  
+    .homeinfo h1 {
+      font-size: 2rem;
+    }
+  
+    .homeinfo p {
+      font-size: 15px;
+    }
+  
+    .homeinfo a {
+      width: 100%;
+      padding: 10px;
+      margin-right: 0;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 60px; 
+        left: 0;
+        right: 0;
+        background-color: white;
+        text-align: center;
+        padding: 10px 0;
+      }
+    
+      .navbar .nav-items {
+        margin: 10px 0;
+      }
+    
+      .nav-toggle {
+        display: block; 
+      }
+    
+      .navbar.active {
+        display: block; 
+      }
+    
+      .navbar .nav-items a {
+        font-size: 1.5rem;
+      }
+    
+      .logo img {
+        height: 35px; 
+      }
+
+    .home {
+        height: auto;
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .location {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .location-img {
+        width: 100%;
+    }
+
+    .location-info {
+        width: 100%;
+    }
+
+    .location-info h1 {
+        font-size: 2rem; 
+    }
+
+    .location-info p {
+        font-size: 1rem; 
+    }
+
+    .location-info a {
+        width: 80%;
+    }
+
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .earnpoints1, .earnpoints2, .earnpoints3 {
+        margin: 10px;
+        width: 100%;
+    }
+
+    .points a {
+        width: 100%; 
+        padding: 8px;
+    }
+
+    .offer {
+        flex-direction: column;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .span-price {
+        font-size: 6rem;
+    }
+
+    .span-offer {
+        font-size: 3.5rem;
+    }
+
+    .offer a {
+        width: 80%;
+    }
+
+    .app {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .info-app {
+        width: 90%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .span-app1, .span-app2, .span-app3 {
+        font-size: 1.8rem;
+    }
+
+    .button-appstore, .button-playstore {
+        width: 50%;
+    }
+
+    .menu .menu1,
+    .menu .menu2,
+    .menu .menu3 {
+        width: 90%; 
+        margin-bottom: 15px;
+    }
+
+
+    .card-info h1 {
+        font-size: 2rem; 
+    }
+
+    .card-info p {
+        font-size: 0.9rem; 
+        max-width: 90%; 
+    }
+
+    .card-info a {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .card-img img {
+        width: 100%;
+        height: auto;
+    }
+}
+@media screen and (min-width: 768px) {
+    .nav-toggle{
+        display: none; 
+    }
+}
+@media screen and (max-width: 768px) {
+    .nav-toggle {
+        display: block; 
+    }
+}
