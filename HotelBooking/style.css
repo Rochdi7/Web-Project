@@ -1,0 +1,423 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:wght@400;500;600&display=swap');
+/* root of colors */
+:root{
+    --primary-color:#2c3855;
+    --primary-color-dark:#435681;
+    --text-dark:#333333;
+    --text-light:#767268;
+    --extra-light:#f3f4f6;
+    --white:#ffffff;
+    --max-width:1200px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* nav bar and logo + booking section */
+body{
+
+    font-family: "Poppins", sans-serif;
+}
+.section__container{
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 5rem 1rem;
+}
+.section__header{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    text-align: center;
+}
+a{
+    text-decoration: none;
+
+}
+img{
+    width: 100%;
+    display: flex;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 2rem 1rem;
+    max-width: var(--max-width);
+}
+
+.nav-items{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.link a{
+    color: var(--text-light);
+    font-weight: 500;
+    transition: 0.3s;
+}
+.logo{
+    width: 150px;
+    height: 150px;
+}
+.header-container{
+    padding: 1rem 1rem 5rem 1rem;
+}
+.image-container{
+    margin-left: 7%;
+    margin-right: 7%;
+    position: relative;
+    min-height: 500px;
+    background-image: linear-gradient(to right, rgba(44, 56, 85, .9), rgba(100, 125, 187, .1)),
+    url("img/header.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 2rem;
+
+}
+.image-content{
+    max-width: 600px;
+    padding: 5rem 2rem;
+}
+.image-content h1{
+    color: var(--white);
+    font-size: 3.5rem;
+    line-height: 4rem;
+    font-weight: 600;
+}
+.image-content p{
+    color: var(--extra-light);
+}
+.booking-container{
+    
+    position: absolute;
+    bottom: -5rem;
+    left: 50%;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 2rem;
+    padding: 3rem 2rem;
+    transform: translateX(-50%);
+    width: calc(100% - 6rem);
+    background-color: rgba(255, 255, 255, 0.7);
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+    
+}
+.booking-container form{
+     width: 100%;
+     flex: 1;
+     display: grid;
+     grid-template-columns: repeat(4, 1fr);
+     gap: 1rem;
+}
+.booking-container .input-group{
+    width: 100%;
+    position: relative;
+}
+.booking-container label{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: var(--text-dark);
+    pointer-events: none;
+    transition: 0.3s;
+}
+.booking-container input{
+    background-color: transparent;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    color: var(--text-dark);
+    border-bottom: 1px solid var(--primary-color);
+}
+.booking-container input:focus ~ label{
+    font-size: 0.8rem;
+    top: 0;
+}
+.booking-container .form-group p{
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: var(--text-light);
+}
+.booking-container .btn-search{
+    padding: 1rem;
+    outline: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.booking-container .btn-search:hover{
+    background-color: var(--primary-color-dark);
+}
+.booking-container .btn-search:hover{
+    background-color: var(--primary-color-dark);
+}
+
+/* section of popular Hotels */
+.popular-grid{
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.popular-card{
+    overflow: hidden;
+    border-radius: 1rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+.popular-content{
+    padding: 1rem;
+
+}
+.popular-content img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+.popular-card img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.9s;
+}
+.popular-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 0.5rem;
+}
+.popular-header h4{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+.popular-header h4 span{
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: var(--text-dark);
+}
+.popular-content p{
+    font-size: 0.8rem;
+    color: var(--text-light);
+}
+.popular-container h2{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+/* client section */
+.client{
+    background-color: var(--extra-light);
+    height: 70vh;
+}
+.client-grid{
+    margin-left: 7%;
+    margin-right: 7%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 4rem;
+}
+.client-card{
+    padding: 2rem;
+    background-color: var(--white);
+    border-radius: 1rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+.client-card img{
+    width: 100px;
+    margin: auto;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.client-card p{
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    color: var(--text-light);
+}
+.client-container h2{
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.client-card p{
+    text-align: center;
+    color: var(--text-dark);
+}
+.client-card:hover{
+    transform: scale(1.1);
+    transition: 0.9s;
+}
+
+/* rewards section */
+.reward{
+    margin-top: 4rem;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+.reward-container{
+    padding: 2rem;
+    text-align: center;
+    border-radius: 2rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+
+}
+.reward-container p{
+    margin-bottom: 1rem;
+    font-weight: 500;
+    color: var(--text-light);
+}
+.reward-container h4{
+    max-width: 500px;
+    margin: auto;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+.btn-rewards{
+    padding: 1rem 3rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    color: var(--white);
+    background-color: var(--primary-color);
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 1rem;
+
+}
+.btn-rewards:hover{
+    background-color: var(--primary-color-dark);
+}
+
+/* footer */
+
+.footer{
+    margin-top: 2rem;
+    background-color: var(--extra-light);
+}
+.footer-container{
+    display: grid;
+    grid-template-columns: 2fr repeat(3, 1fr);
+    gap: 4rem;
+}
+.footer-col h3{
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+.footer-col h4{
+    margin-bottom: 1rem;
+    margin-top: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--text-dark);
+}
+.footer-col p{
+    margin-bottom: 1rem;
+    color: var(--text-light);
+    cursor: pointer;
+    transition: 0.3s;
+}
+.footer-bar{
+    position: relative;
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem;
+    font-size: .9rem;
+    font-weight: 500;
+    text-align: right;
+    color: var(--text-light);
+    overflow: hidden;
+}
+.footer-bar::before{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 28rem;
+    transform: translateY(-50%);
+    width: 20rem;
+    background-color: var(--text-light);
+}
+
+/* responsive for small screens */
+@media (width < 900px) {
+    .booking-container form {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .popular-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+  
+    .client-grid {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+    }
+  
+    .footer-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (width < 600px) {
+    .nav-items {
+      display: none;
+    }
+  
+    .header-container {
+      padding-bottom: 25rem;
+    }
+  
+    .booking-container {
+      flex-direction: column;
+      bottom: -25rem;
+    }
+  
+    .booking-container form {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .popular-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .client-grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .footer-container {
+      gap: 2rem;
+    }
+    .reward-container{
+        margin-top: 590px;
+    }
+  }
+  
+
