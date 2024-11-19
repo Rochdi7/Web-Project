@@ -1,197 +1,347 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <link
-    href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
-    rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
     />
     <title>Hotel Booking</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <nav>
         <div class="nav-logo">
-            <img class="logo" src="img/logo.png" alt="">
+          <img class="logo" src="img/logo.png" alt="Logo" />
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
         <ul class="nav-items">
-            <li class="nav-item">Home</li>
+          <div class="center-nav">
+            <li class="nav-item home">Home</li>
             <li class="nav-item">Book</li>
             <li class="nav-item">Blog</li>
+            <li class="nav-item">Offers</li>
             <li class="nav-item">Contact</li>
+          </div>
+          <div class="right-nav">
+            <li class="nav-item login">Login</li>
+            <li class="nav-item register">Register</li>
+          </div>
         </ul>
-    </nav>
-    
+      </nav>
+      
+
     <header class="header-container">
-        <div class="image-container">
-            <div class="image-content">
-                <h1>Enjoy your dream vacation</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, illum.</p>
-            </div>
-            <div class="booking-container">
-                <form>
-                    <div class="form-group">
-                        <div class="input-group">
-                            <input type="text"> <label >Location</label>
-                        </div>
-                        <p>Where are you going ?</p>
-                    </div>
-                    <div class="form-group">
-                        <div class="input-group">
-                            <input type="text"> <label >Check In</label>
-                        </div>
-                        <p>Add Date of entry</p>
-                    </div>
-                    <div class="form-group">
-                        <div class="input-group">
-                            <input type="text"> <label >Check Out</label>
-                        </div>
-                        <p>Date of Out</p>
-                    </div>
-                    <div class="form-group">
-                        <div class="input-group">
-                            <input type="text"> <label >Guests</label>
-                        </div>
-                        <p>Add Guests</p>
-                    </div>
-                </form>
-                <button class="btn-search"><i class="ri-search-line"></i></button>
-            </div>
+      <div class="image-container">
+        <div class="image-content">
+          <h1>Enjoy your dream vacation</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos,
+            illum.
+          </p>
         </div>
+        <div class="booking-container">
+          <form>
+            <div class="form-group">
+              <div class="input-group">
+                <input type="text" /> <label>Location</label>
+              </div>
+              <p>Where are you going ?</p>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <input type="text" /> <label>Check In</label>
+              </div>
+              <p>Add Date of entry</p>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <input type="text" /> <label>Check Out</label>
+              </div>
+              <p>Date of Out</p>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <input type="text" /> <label>Guests</label>
+              </div>
+              <p>Add Guests</p>
+            </div>
+          </form>
+          <button class="btn-search"><i class="ri-search-line"></i></button>
+        </div>
+      </div>
     </header>
 
     <section class="popular-container">
-        <h2>Popular Hotels</h2>
-        <div class="popular-grid">
-            <div class="popular-card">
-                <img src="img/hotel-1.jpg" alt="">
-                <div class="popular-content">
-                    <div class="popular-header">
-                        <h4>The Plaza Hotel</h4>
-                        <h4>499$</h4>
-                    </div>
-                    <p>Experience luxury in the heart of Marrakech.</p>
-                </div>
+      <h2><i class="ri-fire-line"></i> Popular Hotels</h2>
+      <div class="popular-grid">
+        <div class="popular-card">
+          <img src="img/hotel-1.jpg" alt="" />
+          <div class="popular-content">
+            <div class="popular-header">
+              <h4>The Plaza Hotel</h4>
+              <h4>499$</h4>
             </div>
-            
-            <div class="popular-card">
-                <img src="img/hotel-2.jpg" alt="">
-                <div class="popular-content">
-                    <div class="popular-header">
-                        <h4>Royal Mansour</h4>
-                        <h4>1200$</h4>
-                    </div>
-                    <p>A royal stay with exceptional service.</p>
-                </div>
-            </div>
-            
-            <div class="popular-card">
-                <img src="img/hotel-3.jpg" alt="">
-                <div class="popular-content">
-                    <div class="popular-header">
-                        <h4>La Mamounia</h4>
-                        <h4>899$</h4>
-                    </div>
-                    <p>Elegance and tradition in one place.</p>
-                </div>
-            </div>
-            
-            <div class="popular-card">
-                <img src="img/hotel-4.jpg" alt="">
-                <div class="popular-content">
-                    <div class="popular-header">
-                        <h4>Sofitel Marrakech</h4>
-                        <h4>750$</h4>
-                    </div>
-                    <p>A blend of modern comfort and Moroccan charm.</p>
-                </div>
-            </div>
-            
-            <div class="popular-card">
-                <img src="img/hotel-5.jpg" alt="">
-                <div class="popular-content">
-                    <div class="popular-header">
-                        <h4>Kenzi Club Agdal</h4>
-                        <h4>650$</h4>
-                    </div>
-                    <p>A family-friendly resort with stunning views.</p>
-                </div>
-            </div>
-            
-            <div class="popular-card">
-                <img src="img/hotel-6.jpg" alt="">
-                <div class="popular-content">
-                    <div class="popular-header">
-                        <h4>Selman Marrakech</h4>
-                        <h4>1100$</h4>
-                    </div>
-                    <p>Where elegance meets exclusivity.</p>
-                </div>
-            </div>
-            
+            <p>Marrakech, Morocco</p>
+          </div>
         </div>
+
+        <div class="popular-card">
+          <img src="img/hotel-2.jpg" alt="" />
+          <div class="popular-content">
+            <div class="popular-header">
+              <h4>Royal Mansour</h4>
+              <h4>1200$</h4>
+            </div>
+            <p>Marrakech, Morocco</p>
+          </div>
+        </div>
+
+        <div class="popular-card">
+          <img src="img/hotel-3.jpg" alt="" />
+          <div class="popular-content">
+            <div class="popular-header">
+              <h4>La Mamounia</h4>
+              <h4>899$</h4>
+            </div>
+            <p>Marrakech, Morocco</p>
+          </div>
+        </div>
+
+        <div class="popular-card">
+          <img src="img/hotel-4.jpg" alt="" />
+          <div class="popular-content">
+            <div class="popular-header">
+              <h4>Sofitel Casablanca</h4>
+              <h4>750$</h4>
+            </div>
+            <p>Casablanca, Morocco</p>
+          </div>
+        </div>
+
+        <div class="popular-card">
+          <img src="img/hotel-5.jpg" alt="" />
+          <div class="popular-content">
+            <div class="popular-header">
+              <h4>Le Palace Rabat</h4>
+              <h4>650$</h4>
+            </div>
+            <p>Rabat, Morocco</p>
+          </div>
+        </div>
+
+        <div class="popular-card">
+          <img src="img/hotel-6.jpg" alt="" />
+          <div class="popular-content">
+            <div class="popular-header">
+              <h4>Riad Fes</h4>
+              <h4>1100$</h4>
+            </div>
+            <p>Fes, Morocco</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="offers">
+      <h1><i class="ri-coupon-2-line"></i> Ower Offers</h1>
+      <div class="offers-grid">
+        <div class="offers-card">
+          <div class="offers-header">
+            <img src="img/hotel-1.jpg" alt="" />
+            <h4>La Mamounia</h4>
+            <div class="offers-content">
+              <div class="offers-left">
+                <span class="old-price">999$</span>
+                <span class="new-price">499$</span>
+              </div>
+              <div class="offers-right">
+                <button class="btn-offers">Book Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="offers-card">
+          <div class="offers-header">
+            <img src="img/hotel-2.jpg" alt="" />
+            <h4>Sofitel Casablanca</h4>
+            <div class="offers-content">
+              <div class="offers-left">
+                <span class="old-price">499$</span>
+                <span class="new-price">299$</span>
+              </div>
+              <div class="offers-right">
+                <button class="btn-offers">Book Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="offers-card">
+          <div class="offers-header">
+            <img src="img/hotel-3.jpg" alt="" />
+            <h4>Riad Fes</h4>
+            <div class="offers-content">
+              <div class="offers-left">
+                <span class="old-price">1200$</span>
+                <span class="new-price">899$</span>
+              </div>
+              <div class="offers-right">
+                <button class="btn-offers">Book Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog-section">
+      <div class="container">
+        <h2><i class="ri-news-line"></i> Travel Guides & Blog</h2>
+        <p>
+          Explore our latest articles and tips to make your trip to Morocco
+          unforgettable.
+        </p>
+        <div class="blog-posts">
+          <div class="blog-card">
+            <img
+              src="https://cf.bstatic.com/xdata/images/hotel/max1024x768/484928125.jpg?k=137055faf05334e495a98209d84b29391888164ed2fa26f8d847dd449fb993a3&o=&hp=1"
+              alt="Top Hotels in Marrakech"
+            />
+            <div class="blog-content">
+              <h3>Top 10 Hotels in Marrakech</h3>
+              <p>
+                Discover the best hotels in Marrakech for every budget, from
+                luxury resorts to cozy riads.
+              </p>
+              <a href="#" class="read-more-btn">Read More</a>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <img
+              src="https://www.holidayhypermarket.co.uk/wp-content/uploads/2023/06/agadir-header.png"
+              alt="Guide to Agadir Beaches"
+            />
+            <div class="blog-content">
+              <h3>Guide to Agadir Beaches</h3>
+              <p>
+                Learn about the most beautiful beaches in Agadir, perfect for
+                relaxation and adventure.
+              </p>
+              <a href="#" class="read-more-btn">Read More</a>
+            </div>
+          </div>
+
+          <div class="blog-card">
+            <img
+              src="https://lh3.googleusercontent.com/p/AF1QipNS1k5_YUF23oz8XCWZlwUtITmhvJU_rw50JY4=s294-w294-h220-k-no"
+              alt="What to Do in Casablanca"
+            />
+            <div class="blog-content">
+              <h3>What to Do in Casablanca</h3>
+              <p>
+                Explore the best things to do in Casablanca, including its
+                stunning architecture and rich culture.
+              </p>
+              <a href="#" class="read-more-btn">Read More</a>
+            </div>
+          </div>
+        </div>
+        <div class="cta">
+          <a href="#" class="cta-btn">See All Articles</a>
+        </div>
+      </div>
     </section>
 
     <section class="client">
-        <div class="client-container">
-            <h2>what our clients say</h2>
-            <div class="client-grid">
-                <div class="client-card">
-                    <img src="img/client-1.jpg" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos molestias sunt iure ab porro, dolorem maxime soluta illum, provident ad, nisi aut dolore ex velit perspiciatis animi error ratione libero!</p>
-                </div>
-                <div class="client-card">
-                    <img src="img/client-2.jpg" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos molestias sunt iure ab porro, dolorem maxime soluta illum, provident ad, nisi aut dolore ex velit perspiciatis animi error ratione libero!</p>
-                </div>
-                <div class="client-card">
-                    <img src="img/client-3.jpg" alt="">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos molestias sunt iure ab porro, dolorem maxime soluta illum, provident ad, nisi aut dolore ex velit perspiciatis animi error ratione libero!</p>
-                </div>
-            </div>
+      <div class="client-container">
+        <h2>what our clients say</h2>
+        <div class="client-grid">
+          <div class="client-card">
+            <img src="img/client-1.jpg" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos molestias sunt iure ab porro, dolorem maxime soluta
+              illum, provident ad, nisi aut dolore ex velit perspiciatis animi
+              error ratione libero!
+            </p>
+          </div>
+          <div class="client-card">
+            <img src="img/client-2.jpg" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos molestias sunt iure ab porro, dolorem maxime soluta
+              illum, provident ad, nisi aut dolore ex velit perspiciatis animi
+              error ratione libero!
+            </p>
+          </div>
+          <div class="client-card">
+            <img src="img/client-3.jpg" alt="" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos molestias sunt iure ab porro, dolorem maxime soluta
+              illum, provident ad, nisi aut dolore ex velit perspiciatis animi
+              error ratione libero!
+            </p>
+          </div>
         </div>
+      </div>
     </section>
-    
+
     <section class="reward">
-        <div class="reward-container">
-            <p>100+ discount codes</p>
-            <h4>Join rewards and discover amazing discounts on your boking</h4>
-            <button class="btn-rewards">Join rewards</button>
-        </div>
+      <div class="reward-container">
+        <p><i class="ri-discount-percent-line"></i> 100+ discount codes</p>
+        <h4>Join rewards and discover amazing discounts on your boking</h4>
+        <button class="btn-rewards">Join rewards</button>
+      </div>
     </section>
     <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-col">
-                <h3>Name OF Hotel</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, incidunt.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque maxime a aspernatur!</p>
-            </div>
-            <div class="footer-col">
-                <h4>legal</h4>
-                <p>FAQs</p>
-                <p>Terms & Conditions</p>
-                <p>Privacy Policy</p>
-            </div>
-            <div class="footer-col">
-                <h4>Company</h4>
-                <p>About Us</p>
-                <p>Our Team</p>
-                <p>Blog</p>
-                <p>Book</p>
-                <p>Contact Us</p>
-            </div>
-            <div class="footer-col">
-                <h4>Resources</h4>
-                <p>Social Media</p>
-                <p>Help Center</p>
-                <p>Partnerships</p>
-            </div>
-            <div class="footer-bar">
-                all rights reserved @2024
-            </div>
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3>Name OF web</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima,
+            incidunt.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+            maxime a aspernatur!
+          </p>
         </div>
+        <div class="footer-col">
+          <h4>legal</h4>
+          <p>FAQs</p>
+          <p>Terms & Conditions</p>
+          <p>Privacy Policy</p>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <p>About Us</p>
+          <p>Our Team</p>
+          <p>Blog</p>
+          <p>Book</p>
+          <p>Contact Us</p>
+        </div>
+        <div class="footer-col">
+          <h4>Resources</h4>
+          <p>Social Media</p>
+          <p>Help Center</p>
+          <p>Partnerships</p>
+        </div>
+        <div class="footer-bar">all rights reserved @2024</div>
+      </div>
     </footer>
-</body>
+
+    <script>
+      function toggleMenu() {
+        const navItems = document.querySelector(".nav-items");
+        navItems.classList.toggle("active");
+      }
+    </script>
+  </body>
 </html>

@@ -51,8 +51,44 @@ nav{
 .nav-items{
     list-style: none;
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+    gap: 18rem;
+    cursor: pointer;
+}
+.center-nav{
+    list-style: none;
+    display: flex;
     gap: 2rem;
+}
+.right-nav{
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin-right: 30px;
+}
+.right-nav .register{
+    border: 1px solid var(--primary-color-dark);
+    padding: 4px;
+}
+.right-nav .login{
+    border-radius: 1rem;
+    background-color: var(--primary-color);
+    width: 70px;
+    padding: 5px;
+    text-align: center;
+    color: var(--white);
+}
+.right-nav .login:hover{
+     background-color: var(--primary-color-dark);
+     cursor: pointer;
+}
+.right-nav .register:hover{
+    border: 2px solid var(--primary-color);
+    cursor: pointer;
+}
+.center-nav .home{
+    color: var(--primary-color);
+    font-weight: 600;
 }
 .link a{
     color: var(--text-light);
@@ -63,6 +99,20 @@ nav{
     width: 150px;
     height: 150px;
 }
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+  }
+  
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: var(--text-dark);
+    border-radius: 2px;
+    transition: 0.3s;
+  }
 .header-container{
     padding: 1rem 1rem 5rem 1rem;
 }
@@ -365,6 +415,180 @@ nav{
     background-color: var(--text-light);
 }
 
+/* offers section */
+.offers{
+    background-color: var(--extra-light);
+}
+.offers h1{
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    padding-top: 15px;
+}
+.offers-header h4{
+    padding-top: 9px;
+}
+.offers-grid{
+    margin-left: 7%;
+    margin-right: 7%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.offers-header img{
+    overflow: hidden;
+    border-radius: 1rem;
+    width: 100%;
+}
+.offers-card{
+    background-color: var(--white);
+    border-radius: 1rem;
+    height: 50vh;
+    margin-bottom: 2rem;
+}
+.offers-content{
+    padding: 1rem;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+.offers-header h4{
+    text-align: center;
+}
+.old-price {
+    text-decoration: line-through;
+    color: #999;  
+    font-size: 16px;  
+    margin-bottom: 5px; 
+}
+
+.new-price {
+    font-weight: bold;
+    color: #e74c3c;  
+    font-size: 20px;  
+    display: inline-block; 
+    animation: bounce 2s ease-in-out infinite; 
+}
+.btn-offers{
+    padding: 15px;
+    border: none;
+    outline: none;
+    background-color: var(--primary-color);
+    color: var(--white);
+    width: 120px;
+    border-radius: 10px;
+}
+.btn-offers:hover{
+    background-color: var(--primary-color-dark);
+    cursor: pointer;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* section blog and guide */
+.blog-section {
+    margin-left: 7%;
+    margin-right: 7%;
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.blog-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.blog-section p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+.blog-posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.blog-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 320px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.blog-card:hover {
+    transform: translateY(-10px);
+}
+
+.blog-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.blog-content {
+    padding: 20px;
+}
+
+.blog-content h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.blog-content p {
+    font-size: 1rem;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.read-more-btn {
+    color: var(--primary-color);
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.read-more-btn:hover {
+    text-decoration: underline;
+}
+
+.cta {
+    margin-top: 40px;
+}
+
+.cta-btn {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.cta-btn:hover {
+    background-color: var(--primary-color-dark);
+}
+
 /* responsive for small screens */
 @media (width < 900px) {
     .booking-container form {
@@ -380,7 +604,7 @@ nav{
       grid-template-columns: repeat(2, 1fr);
       gap: 1rem;
     }
-  
+    
     .footer-container {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -407,7 +631,9 @@ nav{
     .popular-grid {
       grid-template-columns: repeat(1, 1fr);
     }
-  
+     .offers-grid{
+        grid-template-columns: repeat(1, 1fr);
+     }
     .client-grid {
       grid-template-columns: repeat(1, 1fr);
     }
@@ -416,8 +642,33 @@ nav{
       gap: 2rem;
     }
     .reward-container{
-        margin-top: 590px;
+        margin-top: 740px;
+    }
+    .nav-items {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: var(--white);
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-items.active {
+        display: flex;
+    }
+
+    .center-nav, .right-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .hamburger {
+        display: flex;
     }
   }
-  
 
+
+  
