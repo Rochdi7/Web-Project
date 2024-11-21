@@ -1,6 +1,10 @@
 # Popular Moroccans Hotels Booking Website 🌍🏨
 
+<<<<<<< HEAD
 Welcome to the **Hotel Booking Website**! This project is a **landing page for a hotel booking platform** that showcases **all hotels across Morocco**. Whether you're planning a luxurious getaway or a budget-friendly trip, this website helps you explore and book the perfect hotel for your dream vacation. Built with **HTML**, **CSS**, and responsive design principles, it ensures an excellent user experience across devices.
+=======
+Welcome to the **Hotel Booking Website**! This project offers a user-friendly, modern, and responsive platform to explore and book hotels for your dream vacation. Built with **HTML**, **CSS**, and responsive design principles, it ensures an excellent user experience across devices.
+>>>>>>> 98a9a0771d5108251b605f33311c732d0055f2f0
 
 ---
 
@@ -11,7 +15,11 @@ Welcome to the **Hotel Booking Website**! This project is a **landing page for a
 - **Popular Hotels Section**: Showcasing top-rated hotels with descriptions, locations, and pricing.
 - **Client Reviews**: Highlights testimonials from satisfied customers.
 - **Reward System**: Engage users with discounts and exclusive benefits.
+<<<<<<< HEAD
 - **Blog Section**: Explore travel guides and tips for an unforgettable trip to Morocco.
+=======
+- **Blog Section**: Explore travel guides and tips for an unforgettable trip.
+>>>>>>> 98a9a0771d5108251b605f33311c732d0055f2f0
 - **Stylish Footer**: Quick access to essential links like terms, privacy policy, and company details.
 
 ---
