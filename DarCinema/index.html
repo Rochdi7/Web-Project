@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/default.css" />
+    <script src="js/main.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <title>DarCinema</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="active">
+        <div class="navbar">
+          <button class="navbar-menu-btn">
+            <span class="one"></span>
+            <span class="two"></span>
+            <span class="thre"></span>
+          </button>
+          <a href="" class="navbar-brand">
+            <span class="dar">Dar <span class="cinema">Cinema</span></span>
+          </a>
+
+          <nav>
+            <ul class="navbar-nav">
+              <li>
+                <a href="" class="navbar-link">Home</a>
+              </li>
+              <li>
+                <a href="" class="navbar-link">Category</a>
+              </li>
+              <li>
+                <a href="" class="navbar-link indicator">LIVE</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="navbar-actions">
+            <form action="" class="navbar-form">
+              <input
+                type="text"
+                placeholder="Im looking for..."
+                class="navbar-form-search"
+              />
+              <button class="navbar-search-icon">
+                <ion-icon name="search-outline"></ion-icon>
+              </button>
+              <button class="navbar-signout-icon">
+                <ion-icon name="log-out-outline"></ion-icon>
+              </button>
+            </form>
+
+            <button class="navbar-search-mobile">
+              <ion-icon name="search-outline"></ion-icon>
+            </button>
+            <a href="" class="navbar-signin-mobile">
+              <span class="sign-in">Sign In</span>
+              <ion-icon name="log-in-outline"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="banner">
+          <div class="banner-card">
+            <img src="img/movies/cover.jpg" alt="" />
+
+            <div class="card-content">
+              <div class="card-info">
+                <div class="genre">
+                  <ion-icon name="film-outline"></ion-icon>
+                  <span>ACtion/Thriller</span>
+                </div>
+                <div class="year">
+                  <ion-icon name="calendar-outline"></ion-icon>
+                  <span>2024</span>
+                </div>
+                <div class="duration">
+                  <ion-icon name="alarm-outline"></ion-icon>
+                  <span>2H 11Min</span>
+                </div>
+                <div class="quality">4K</div>
+              </div>
+              <h2 class="card-title">Moroccan Badass Girl - مروكية حارة HD</h2>
+            </div>
+          </div>
+        </section>
+
+        <section class="movies">
+          <div class="filter-bar">
+            <div class="filter-dropdowns">
+              <select name="genre" id="" class="genre">
+                <option value="all genres">all genres</option>
+                <option value="action">Action</option>
+                <option value="adventure">Adventure</option>
+                <option value="animal">Animal</option>
+                <option value="biography">Biography</option>
+              </select>
+              <select name="genre" id="" class="genre">
+                <option value="all years">all years</option>
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+              </select>
+            </div>
+            <div class="filter-radios">
+              <input type="radio" name="grade" id="featured" checked />
+              <label for="featured">Featured</label>
+
+              <input type="radio" name="grade" id="Popular" />
+              <label for="Popular">Popular</label>
+
+              <input type="radio" name="grade" id="Newest" />
+              <label for="Newest">Newest</label>
+              <div class="checked-radio-bg"></div>
+            </div>
+          </div>
+        </section>
+
+        <div class="movies-grid">
+          <div class="movies-card">
+            <div class="card-head">
+              <img src="img/movies/Rdat L’walida.jpg" class="img-card" alt="Rdat L’walida" />
+              <div class="card-overlay">
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>8.1</span>
+                </div>
+                <div class="play">
+                  <ion-icon name="play-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Rdat L’walida</h3>
+            </div>
+            <div class="card-info">
+              <span class="genre">Drama</span>
+              <span class="year">2018</span>
+            </div>
+          </div>
+        
+          <div class="movies-card">
+            <div class="card-head">
+              <img src="img/movies/L’khawa.jpg" class="img-card" alt="L’khawa" />
+              <div class="card-overlay">
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>8.3</span>
+                </div>
+                <div class="play">
+                  <ion-icon name="play-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">L’khawa</h3>
+            </div>
+            <div class="card-info">
+              <span class="genre">Drama</span>
+              <span class="year">2019</span>
+            </div>
+          </div>
+        
+          <div class="movies-card">
+            <div class="card-head">
+              <img src="img/movies/Bent Bladi.jpg" class="img-card" alt="Bent Bladi" />
+              <div class="card-overlay">
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>7.9</span>
+                </div>
+                <div class="play">
+                  <ion-icon name="play-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Bent Bladi</h3>
+            </div>
+            <div class="card-info">
+              <span class="genre">Drama</span>
+              <span class="year">2022</span>
+            </div>
+          </div>
+        
+          <div class="movies-card">
+            <div class="card-head">
+              <img src="img/movies/Al Jassous.jpg" class="img-card" alt="Al Jassous" />
+              <div class="card-overlay">
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>8.5</span>
+                </div>
+                <div class="play">
+                  <ion-icon name="play-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Al Jassous</h3>
+            </div>
+            <div class="card-info">
+              <span class="genre">Action</span>
+              <span class="year">2020</span>
+            </div>
+          </div>
+        
+          <div class="movies-card">
+            <div class="card-head">
+              <img src="img/movies/Tigmi N Igran.jpg" class="img-card" alt="Tigmi N Igran" />
+              <div class="card-overlay">
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>7.6</span>
+                </div>
+                <div class="play">
+                  <ion-icon name="play-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Tigmi N Igran</h3>
+            </div>
+            <div class="card-info">
+              <span class="genre">Comedy</span>
+              <span class="year">2018</span>
+            </div>
+          </div>
+        
+          <div class="movies-card">
+            <div class="card-head">
+              <img src="img/movies/Zero.jpg" class="img-card" alt="Zero" />
+              <div class="card-overlay">
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>9.1</span>
+                </div>
+                <div class="play">
+                  <ion-icon name="play-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Zero</h3>
+            </div>
+            <div class="card-info">
+              <span class="genre">Crime</span>
+              <span class="year">2012</span>
+            </div>
+          </div>
+        
+          <div class="movies-card">
+            <div class="card-head">
+              <img src="img/movies/girlbad.jpg" class="img-card" alt="Hobra" />
+              <div class="card-overlay">
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>8.7</span>
+                </div>
+                <div class="play">
+                  <ion-icon name="play-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Moroccan BadAss GIrl</h3>
+            </div>
+            <div class="card-info">
+              <span class="genre">Thriller</span>
+              <span class="year">2021</span>
+            </div>
+          </div>
+          <div class="movies-card">
+            <div class="card-head">
+              <img src="img/movies/mere.jpg" class="img-card" alt="Adieu Mères" />
+              <div class="card-overlay">
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>8.2</span>
+                </div>
+                <div class="play">
+                  <ion-icon name="play-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Adieu Mères</h3>
+            </div>
+            <div class="card-info">
+              <span class="genre">Drama</span>
+              <span class="year">2007</span>
+            </div>
+          </div>
+        
+          <div class="movies-card">
+            <div class="card-head">
+              <img src="img/movies/Les Chevaux de Dieu.jpg" class="img-card" alt="Les Chevaux de Dieu" />
+              <div class="card-overlay">
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>9.0</span>
+                </div>
+                <div class="play">
+                  <ion-icon name="play-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Les Chevaux de Dieu</h3>
+            </div>
+            <div class="card-info">
+              <span class="genre">Drama/Thriller</span>
+              <span class="year">2012</span>
+            </div>
+          </div>
+        
+          <div class="movies-card">
+            <div class="card-head">
+              <img src="img/movies/Casanegra.jpg" class="img-card" alt="Casanegra" />
+              <div class="card-overlay">
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>8.9</span>
+                </div>
+                <div class="play">
+                  <ion-icon name="play-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Casanegra</h3>
+            </div>
+            <div class="card-info">
+              <span class="genre">Drama/Crime</span>
+              <span class="year">2008</span>
+            </div>
+          </div>
+        
+          <div class="movies-card">
+            <div class="card-head">
+              <img src="img/movies/Volubilis.jpg" class="img-card" alt="Volubilis" />
+              <div class="card-overlay">
+                <div class="bookmark">
+                  <ion-icon name="bookmark-outline"></ion-icon>
+                </div>
+                <div class="rating">
+                  <ion-icon name="star-outline"></ion-icon>
+                  <span>7.8</span>
+                </div>
+                <div class="play">
+                  <ion-icon name="play-outline"></ion-icon>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Volubilis</h3>
+            </div>
+            <div class="card-info">
+              <span class="genre">Romance/Drama</span>
+              <span class="year">2017</span>
+            </div>
+          </div>
+        </div>
+
+        
+        
+        <button class="btn-loadmore">Load More</button>
+
+        <section class="category" id="category">
+          <h2 class="category-heading">Categories</h2>
+          <div class="category-grid">
+            <div class="category-card">
+              <img src="img/drama.jpg" alt="Drama" />
+              <div class="name">Drama</div>
+              <div class="total">145</div>
+            </div>
+        
+            <div class="category-card">
+              <img src="img/comedy.jpg" alt="Comedy" />
+              <div class="name">Comedy</div>
+              <div class="total">98</div>
+            </div>
+        
+            <div class="category-card">
+              <img src="img/romance.jpg" alt="Romance" />
+              <div class="name">Romance</div>
+              <div class="total">76</div>
+            </div>
+        
+            <div class="category-card">
+              <img src="img/action.jpg" alt="Action" />
+              <div class="name">Action</div>
+              <div class="total">55</div>
+            </div>
+        
+            <div class="category-card">
+              <img src="img/historical.jpg" alt="Historical" />
+              <div class="name">Historical</div>
+              <div class="total">62</div>
+            </div>
+        
+            <div class="category-card">
+              <img src="img/thriller.jpg" alt="Thriller" />
+              <div class="name">Thriller</div>
+              <div class="total">40</div>
+            </div>
+        
+            <div class="category-card">
+              <img src="img/familly.jpg" alt="Family" />
+              <div class="name">Family</div>
+              <div class="total">88</div>
+            </div>
+        
+            <div class="category-card">
+              <img src="img/documentary.jpg" alt="Documentary" />
+              <div class="name">Documentary</div>
+              <div class="total">30</div>
+            </div>
+        
+           
+          </div>
+        </section>
+        
+
+        <section class="live">
+          <h2 class="category-section">Live TV & Shows</h2>
+          <div class="live-grid">
+            <div class="live-card">
+              <div class="live-head">
+                <img src="img/movies/aloulatvlive.jpg" alt="Al Aoula" />
+                <div class="live-badge">LIVE</div>
+                <div class="total-viewers">2.5k Viewers</div>
+                <div class="play">
+                  <ion-icon name="play-outline"></ion-icon>
+                </div>
+              </div>
+              <div class="card-body">
+                <img src="img/movies/aloula.jpg" alt="Al Aoula Logo" />
+                <h3 class="card-title">
+                  Al Aoula <br />
+                  (Moroccan Public TV)
+                </h3>
+              </div>
+            </div>
+        
+            <div class="live-card">
+              <div class="live-head">
+                <img src="img/movies/2mlivetv.jpg" alt="2M TV" />
+                <div class="live-badge">LIVE</div>
+                <div class="total-viewers">3.8k Viewers</div>
+                <div class="play">
+                  <ion-icon name="play-outline"></ion-icon>
+                </div>
+              </div>
+              <div class="card-body">
+                <img src="img/movies/2M TV.jpg" alt="2M Logo" />
+                <h3 class="card-title">
+                  2M TV <br />
+                  (Popular Entertainment)
+                </h3>
+              </div>
+            </div>
+        
+            <div class="live-card">
+              <div class="live-head">
+                <img src="img/movies/wydad-raja-chaines.jpg" alt="Arryadia" />
+                <div class="live-badge">LIVE</div>
+                <div class="total-viewers">32.4k Viewers</div>
+                <div class="play">
+                  <ion-icon name="play-outline"></ion-icon>
+                </div>
+              </div>
+              <div class="card-body">
+                <img src="img/movies/Arryadia.gif" alt="Arryadia Logo" />
+                <h3 class="card-title">
+                  Arryadia <br />
+                  (Sports Channel)
+                </h3>
+              </div>
+            </div>
+        
+            <div class="live-card">
+              <div class="live-head">
+                <img src="img/movies/maghrebialive.jpg" alt="Al Maghribia" />
+                <div class="live-badge">LIVE</div>
+                <div class="total-viewers">1.2k Viewers</div>
+                <div class="play">
+                  <ion-icon name="play-outline"></ion-icon>
+                </div>
+              </div>
+              <div class="card-body">
+                <img src="img/movies/Almaghribiax2.png" alt="Al Maghribia Logo" />
+                <h3 class="card-title">
+                  Al Maghribia <br />
+                  (International Channel)
+                </h3>
+              </div>
+            </div>
+        
+            <div class="live-card">
+              <div class="live-head">
+                <img src="img/movies/livemedi1.jpg" alt="Medi1 TV" />
+                <div class="live-badge">LIVE</div>
+                <div class="total-viewers">900 Viewers</div>
+                <div class="play">
+                  <ion-icon name="play-outline"></ion-icon>
+                </div>
+              </div>
+              <div class="card-body">
+                <img src="img/movies/medi1tv.jpg" alt="Medi1 Logo" />
+                <h3 class="card-title">
+                  Medi1 TV <br />
+                  (News & Documentaries)
+                </h3>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+      </main>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-brand">
+            <span class="dar">Dar <span class="cinema">Cinema</span></span>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima
+            tempore esse in cumque. Atque laudantium assumenda, dolores
+            consequatur omnis excepturi.
+          </p>
+          <div class="social-link">
+            <a href=""><ion-icon id="logo-facebook" name="logo-facebook"></ion-icon></a>
+            <a href=""><ion-icon id="logo-instagram" name="logo-instagram"></ion-icon></a>
+            <a href=""><ion-icon id="logo-twitter" name="logo-twitter"></ion-icon></a>
+            <a href=""><ion-icon id="logo-youtube" name="logo-youtube"></ion-icon></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+            <ul> <h4 class="link-heading">Navigate</h4>
+                <li class="link-item"> <a href="#">About us</a> </li>
+                <li class="link-item"> <a href="#">My Profile</a> </li>
+                <li class="link-item"> <a href="#">Pricing Plans</a> </li>
+                <li class="link-item"> <a href="#">Contact</a> </li>
+            </ul>
+            <ul> <h4 class="link-heading">Browse</h4>
+                <li class="link-item"><a href="#">Live TV</a></li>
+                <li class="link-item"><a href="#">Live Sports</a></li>
+                <li class="link-item"><a href="#">Culture</a></li>
+                <li class="link-item"><a href="#">Series</a></li>
+            </ul>
+            
+            <ul> <h4 class="link-heading">Help</h4>
+                <li class="link-item"><a href="#">Privacy & terms</a></li>
+                <li class="link-item"><a href="#">Support Chat</a></li>
+                <li class="link-item"><a href="#">Donate</a></li>
+                <li class="link-item"><a href="#">How to Use</a></li>
+            </ul>
+
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>&copy;2024 allrights reserved Dar Cinema</p>
+      </div>
+    </footer>
+  </body>
+</html>
