@@ -55,4 +55,4 @@ Discover Morocco's rich traditions and creative spirit through this interactive 
 ---
 
 **Contact Us**:  
-For suggestions or feedback, email us at [darcinema@example.com](mailto:rochdi.karouali1234@gmail.com).  
+For suggestions or feedback, email us at [rochdi.karouali1234@gmail.com](mailto:rochdi.karouali1234@gmail.com).  
