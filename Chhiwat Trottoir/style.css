@@ -1,0 +1,397 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@400;500;600&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@400;500;600&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* font-family: "Raleway", sans-serif;
+font-family: "Montserrat", sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p{
+    font-family: "Raleway", sans-serif;
+}
+body {
+  background-color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+    color: #cccccc;
+}
+/* nav bar header*/
+ion-icon{
+    color: #133e87;
+    font-size: 1.3rem;
+}
+.container-fluid img {
+  width: 50px;
+  height: 50px;
+}
+.container-fluid .navbar-brand .Chhiwat{
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: "Raleway", sans-serif;
+
+}
+.container-fluid .navbar-brand .Trottoir{
+    font-size: 1.5rem;
+    color: #133e87;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+}
+.collapse .navbar-nav .nav-item .nav-link{
+     font-size: 1.1rem;
+     font-weight: 600;
+     margin-left: 20px;
+     line-height: 1.5;
+}
+.collapse .navbar-nav .nav-item .nav-link:hover{
+    color: #133e87;
+}
+.container-fluid .navbar-delivery .text-dark{
+    color: #cccc;
+    margin-right: 20px;
+}
+.container-fluid .navbar-delivery .phone{
+    font-weight: 500;
+    color: #133e87;
+}
+.container-fluid .navbar-delivery .btn{
+    width: 150px;
+    padding: 10px;
+    color: white;
+    background-color: #133e87;
+    border: none;
+    text-decoration: uppercase;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.container-fluid .navbar-delivery .btn:hover{
+    background-color: #0a0e17;
+}
+.container-fluid .navbar-delivery .btn ion-icon{
+    color: white;
+    font-size: 1rem;
+}
+/* what we sell section contain some of foods*/
+.what-we-sell {
+  height: 80vh;
+  background-color: #133e87;
+  
+}
+.content h3{
+    margin-top: 40px;
+}
+.content img {
+    margin-top: 40px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content h3{
+    padding: 0px 30px 0px 30px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.container h1{ 
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    padding-top: 20px;
+    word-spacing: 5px;
+}
+
+.food-grid .food-card{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    width: 500px;
+    margin: 0 auto;
+
+}
+.food-card .foods{
+    background-color: #ffffff;
+    border-radius: 10px;
+    width: 350px;
+    height: 130px;
+    padding: 10px;
+    margin: 10px;
+
+}
+.food-grid .food-card .foods{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.food-grid .food-card .foods .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.food-grid .food-card .foods .title h1{
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding-left: 10px;
+}
+.food-grid .food-card .foods .title h1:hover{
+    color: #133e87;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.food-grid .food-card .foods .title img{
+    padding: 10px;
+    border: 1px solid #133e87;
+    border-radius: 50%;
+}
+.food-grid .food-card .foods .title img:hover{
+    cursor: pointer;
+    transform: rotate(360deg);
+    transition: transform 0.5s ease-in-out;}
+
+.food-grid .food-card .foods ion-icon{
+    border: none;
+    padding: 10px;
+    border-radius: 7px;
+}
+.food-grid .food-card .foods ion-icon:hover{
+    cursor: pointer;
+    background-color: #0a0e17;
+    color: white;
+}
+
+/* food menu */
+.order{
+    height: 120vh;
+    
+}
+.order-grid .orders{
+    margin-top: 30PX;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    justify-content: center;
+}
+.container .h1-order{
+     color: #0a0e17;
+     font-size: 2rem;
+     font-weight: 400;
+}
+.order-grid .orders .order{
+    position: relative;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    width: 350px;
+    height: 550px;
+    padding: 20px;
+    margin: 10px;
+}
+.order-grid .orders .order:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.5s ease-in-out;
+}
+.orders .order .order-down h1{
+    color: #133e87;
+    font-size: 1.6rem;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+.orders .order .order-down p{
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 400;
+    word-spacing: 2px;
+    line-height: 1.5;
+    padding: 10px;
+}
+.orders .order .order-down .fastdelivery {
+    position: absolute;
+    top: 12px;
+    z-index: 100;
+    right: 10px;
+    background-color: #133e87;
+    color: white;
+    padding: 5px;
+    border-radius: 5px; 
+}
+/*working time section */
+.time-work{
+    background-color: #133e87;
+}
+.container .grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.container .grid .time .head{
+    display: flex;
+    align-items: center;
+}
+.container .grid .time h1{
+    color: white;
+    padding: 40px;
+    text-align: left;
+    font-size: 1.7rem;
+    font-weight: 450;
+}
+.container .grid .time .day-time {
+    position: relative;
+    background: url('img/time.png') no-repeat center center;
+    background-size: cover;
+    width: 500px;
+    min-height: 100px;
+    padding: 33px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.container .grid .time .day-time p {
+    color: #ffffff;
+    font-size: 1.1rem;
+    font-weight: 400;
+    text-align: center;
+    margin: 0;
+}
+/*contact section */
+.contact{
+    background-color: white;
+    margin-bottom: 50px;
+}
+.container h1{
+    color: #133e87;
+    margin: 20px;
+    padding: 20px;
+}
+.container .contact-content p{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 30px;
+    color: #0a0e17;
+
+}
+.social-contacts {
+    margin: 20px 0;
+}
+.social-contact {
+    margin-bottom: 10px;
+}
+.contact-details {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.contact-details input {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #133e87;
+    border-radius: 4px;
+}
+.contact-details button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.social-contacts .social-contact{
+    padding: 10px;
+}
+.social-contacts .social-contact label{
+    padding-bottom: 15px;
+    color: #133e87;
+    font-weight: 500;
+    border: none;
+    border-radius: 15px;
+    outline: none;
+}
+
+/* footer section */
+.footer {
+    background-color: #133e87;
+    color: white;
+    padding: 20px;
+    text-align: left;
+    
+}
+
+.grid-footer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-item {
+    padding: 10px;
+}
+
+.footer-item h1, .footer-item h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.footer-item ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-item ul li {
+    margin-bottom: 5px;
+}
+
+.footer-item ul li a {
+    color: #0a0e17;
+    text-decoration: none;
+}
+
+.footer-item ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-item label input[type="email"] {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 5px;
+    width: calc(100% - 40px);
+}
+
+.footer-item label ion-icon {
+    vertical-align: middle;
+}
+
+@media (max-width: 768px) {
+    .what-we-sell {
+        height: 210vh;
+        background-color: #133e87;
+        
+      }
+      .order{
+        height: 350vh;
+        
+    }
+      .order-grid .orders{
+        grid-template-columns: repeat(1, 1fr);
+      }
+    .food-grid .food-card{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .container .grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .time-work{
+       width: 100%;
+    }
+
+    .grid-footer {
+        grid-template-columns: 1fr;
+    }
+    .footer-item {
+        text-align: center;
+    }
+}

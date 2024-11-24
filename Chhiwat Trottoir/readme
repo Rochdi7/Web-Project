@@ -1,0 +1,46 @@
+# Street Food Platform for Morocco 🍢🍴
+
+A platform designed to empower street food sellers in Morocco. This project aims to connect local food artisans with their customers by showcasing their specialties, working hours, and contact details, all in a responsive and user-friendly interface.
+
+---
+
+## 🎥 Demo
+![Project Demo](your-gif-link-here.gif)
+> *Replace "your-gif-link-here.gif" with the link to your project GIF or image.*
+
+---
+
+## 📜 Features
+- **Responsive Design:** Perfectly adapts to all screen sizes, from desktops to smartphones.
+- **Seller Information:** Displays working hours, specialties, and contact details.
+- **Interactive UI:** Easy-to-navigate layout designed for both users and sellers.
+- **Moroccan Vibes:** A design inspired by the vibrant street food culture of Morocco.
+
+---
+
+## 🛠️ Technologies Used
+- **HTML5 & CSS3:** For structuring and styling the platform.
+- **JavaScript:** To handle interactivity and responsiveness.
+- **Responsive Design Principles:** Ensuring a seamless user experience across all devices.
+
+---
+
+## 🚀 How to Run This Project
+1. Clone the repository:
+   ```bash
+git clone https://github.com/Rochdi7/Web-Project.git
+
+### ScreenShots
+   ![Project GIF](https://i.postimg.cc/bwcKYgw9/chiwat-trotoir.gif)
+
+🌟 Contribution Guidelines
+We welcome contributions to improve the project. Here's how you can get started:
+
+Fork this repository.
+Create a new branch for your feature: ```bash git checkout -b feature-name ```
+Commit your changes: ```bash git commit -m "Add your message here" ```
+Push to your branch: ```bash git push origin feature-name ```
+Submit a pull request.
+
+🥳 Special Thanks
+A big thank you to the street food vendors of Morocco who inspired this project. Keep serving those delicious meals! 🥘✨
