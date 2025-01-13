@@ -13,3 +13,4 @@ Change 6: Integrated client testimonials carousel
 Change 7: Optimized footer with legal and resource links
 Change 8: Added reward section for discounts
 Change 9: Improved accessibility and semantic HTML
+Change 10: Finalized layout and minor style fixes
