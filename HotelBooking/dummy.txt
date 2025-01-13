@@ -1,1 +1,2 @@
 Initializing dummy file for Hotel Booking project
+Change 1: Added navigation bar with responsive menu
