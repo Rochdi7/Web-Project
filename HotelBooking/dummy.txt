@@ -11,3 +11,4 @@ Change 4: Styled the special offers section
 Change 5: Enhanced travel blog section with images and content
 Change 6: Integrated client testimonials carousel
 Change 7: Optimized footer with legal and resource links
+Change 8: Added reward section for discounts
