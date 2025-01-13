@@ -1,3 +1,4 @@
 Initializing dummy file for Hotel Booking project
 Change 1: Added navigation bar with responsive menu
 Change 1: Added navigation bar with responsive menu
+Change 2: Designed header section with booking form
