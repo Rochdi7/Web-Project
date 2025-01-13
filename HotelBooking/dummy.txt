@@ -4,3 +4,4 @@ Change 1: Added navigation bar with responsive menu
 Change 2: Designed header section with booking form
 Change 3: Implemented popular hotels section with cards
 Change 4: Styled the special offers section
+Change 1: Added navigation bar with responsive menu
