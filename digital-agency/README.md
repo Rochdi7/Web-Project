@@ -1,8 +1,4 @@
 # 📌 Digital Agency - Landing Page
-
-## 🌍 Live Demo
-🔗 [Voir la démo en ligne](#) *(Remplace par le lien de déploiement si disponible)*
-
 ---
 
 ## 📜 Description
@@ -30,16 +26,11 @@
 
 ---
 
-## 📸 Captures d'écran
-📷 *Ajoute ici des captures d’écran du projet en action*
-
----
-
 ## 📥 Installation et Exécution
 
 1. **Cloner le projet**  
    ```bash
-   git clone https://github.com/ton-utilisateur/nom-du-repo.git
+   git clone https://github.com/Rochdi7/Web-Project
    ```
    
 2. **Accéder au dossier**  
@@ -82,7 +73,7 @@
 ---
 
 ## ✨ Crédit
-Développé avec ❤️ par **[Ton Nom](https://github.com/Ton-GitHub)**  
+Développé avec ❤️ par **[Rochdi](https://github.com/Rochdi7)**  
 Inspiré par l’univers du **Digital Marketing** 🚀
 
 ---
