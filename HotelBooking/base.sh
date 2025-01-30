@@ -1,5 +1,5 @@
 #!/bin/bash
-# Script to automate commits for the Hotel Booking Landing Page project with a delay between each commit
+# Script to automate commits for the Hotel Booking Landing Page project
 
 # Number of commits you want to add
 NUM_COMMITS=10
@@ -28,19 +28,13 @@ commit_messages=(
     "Finalized layout and minor style fixes"
 )
 
-# Loop to add commits with a 10-minute delay
+# Loop to add commits
 for ((i=1; i<=NUM_COMMITS; i++))
 do
     echo "Change $i: ${commit_messages[i-1]}" >> "$FILE_NAME"  # Modify the file
     git add "$FILE_NAME"                                      # Stage changes
     git commit -m "${commit_messages[i-1]}"                  # Create commit
     echo "Created commit $i: ${commit_messages[i-1]}"
-    
-    # Wait for 10 minutes before the next iteration
-    if [ $i -lt $NUM_COMMITS ]; then
-        echo "Waiting 10 minutes before the next commit..."
-        sleep 600  # 600 seconds = 10 minutes
-    fi
 done
 
 # Push changes to GitHub
