@@ -2,3 +2,4 @@ Initializing Falling Ball game script
 Improved collision detection - Iteration 1
 Created obstacle generator - Iteration 2
 Created obstacle generator - Iteration 3
+Refined ball and obstacle interaction - Iteration 4
