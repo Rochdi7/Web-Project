@@ -6,3 +6,4 @@ Refined ball and obstacle interaction - Iteration 4
 Refined ball and obstacle interaction - Iteration 5
 Improved collision detection - Iteration 6
 Added ball movement functionality - Iteration 7
+Initial setup for Falling Ball game - Iteration 8
