@@ -1,1 +1,2 @@
 Initializing Falling Ball game script
+Improved collision detection - Iteration 1
