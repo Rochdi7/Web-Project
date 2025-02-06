@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+:root {
+    --bg-color: #1E1E2E;
+    --ball-color: #FF6B6B;
+    --platform-color: #4ECDC4;
+}
+
+/* Game Container */
+.gamecontainer {
+    background-color: var(--bg-color);
+    width: 500px;
+    height: 450px;
+    border: 2px solid var(--ball-color);
+    position: relative;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+/* Ball (Player) */
+.ball {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: var(--ball-color);
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+/* Blocks (Obstacles) */
+.block {
+    width: 100%;
+    height: 20px;
+    background-color: var(--platform-color);
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    animation: moveDown 4s linear forwards;
+}
+
+/* Gap (Passage for the ball) */
+.gap {
+    width: 80px;
+    height: 20px;
+    background-color: var(--bg-color);
+    position: absolute;
+    top: 0;
+    animation: moveDown 4s linear forwards;
+    z-index: 2;
+}
+
+/* Animation for Moving Down */
+@keyframes moveDown {    
+    from {
+        top: 0;
+    }
+    to {
+        top: 450px;
+    }
+}
