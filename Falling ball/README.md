@@ -8,7 +8,7 @@ A fun and interactive **Falling Ball Game** where the player must navigate a bal
 
 | Game Start                                  | Game Over Screen                         |
 |----------------------------------------------|-----------------------------------------|
-| ![Start](assets/image/start.png) | ![Game Over](assets/image/game-over.png) |
+| ![Start](assets/image/end.png) | ![Game Over](assets/image/start.png) |
 
 ---
 
