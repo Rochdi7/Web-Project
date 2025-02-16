@@ -10,7 +10,7 @@ Below are some screenshots of the **Memory Card Game** in action:
 
 | Cards Before                                | Cards After Flip (Winning State)                         |
 |----------------------------------------------|------------------------------------------------|
-| ![Back](assets/image/capture1.png) | ![Flip](assets/image/capture2.png) |
+| ![Back](assets/image/back.png) | ![Flip](assets/image/capture2.png) |
 
 ---
 
