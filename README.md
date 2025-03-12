@@ -15,6 +15,8 @@ This repository includes multiple **Landing Pages** and **Web Projects** that I 
 ✅ `Zumba` 💃 - A website for dance and fitness classes.  
 ✅ `Digital Agency` 🚀 - A modern landing page for a digital agency.  
 ✅ `Dunkin Donuts` 🍩 - A promotional website for a coffee and donut franchise.  
+✅ `Memory Card` 🃏 - A fun interactive card-matching game to test memory skills.  
+✅ `Falling Ball` 🏀 - A physics-based web game where players control a falling ball to avoid obstacles.  
 
 Each project follows a well-organized and maintainable structure:  
 
