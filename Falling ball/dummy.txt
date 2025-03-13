@@ -1,3 +1,4 @@
 Initializing Falling Ball game script
 Improved collisions - Iteration 1
 Added obstacles - Iteration 2
+Improved collisions - Iteration 3
