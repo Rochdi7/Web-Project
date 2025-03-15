@@ -15,3 +15,4 @@ Change 8: Added reward section for discounts
 Change 9: Improved accessibility and semantic HTML
 Change 10: Finalized layout and minor style fixes
 Change 1: Added navbar, header, and booking form
+Change 2: Implemented hotels, offers, and blog sections
